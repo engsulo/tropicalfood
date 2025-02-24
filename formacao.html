@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação Profissional de Curta Duração</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: url(./assets/Banner.png) no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            width: 100%;
+            background: #2e7d32;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 15px;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            font-weight: 600;
+        }
+
+        /* Container principal */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            padding: 40px;
+            background: #063309;
+            opacity: 0.9;
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animação de entrada */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        /* Seção de Benefícios */
+        .benefits {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .benefit-box {
+            width: 30%;
+            min-width: 250px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .benefit-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .benefit-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .benefit-box p {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Lista de Cursos */
+        .courses {
+            margin-top: 30px;
+        }
+
+        .courses ul {
+            list-style: none;
+        }
+
+        .courses li {
+            font-size: 1.2rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .courses li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Depoimentos */
+        .testimonials {
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            font-size: 1rem;
+            font-style: italic;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px;
+            max-width: 600px;
+            display: inline-block;
+        }
+
+        /* Galeria */
+        .gallery {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Botão de Ação */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 15px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #ff7700, #ff3300);
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 51, 0, 0.6);
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        @media (max-width: 768px) {
+            .benefits {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formação Profissional de Curta Duração 📚</h1>
+        <p>Capacitação rápida e eficiente para transformar sua carreira!</p>
+
+        <!-- Seção de Benefícios -->
+        <div class="benefits">
+            <div class="benefit-box">
+                <h2>⏳ Tempo Reduzido</h2>
+                <p>Cursos rápidos que maximizam aprendizado sem comprometer a qualidade.</p>
+            </div>
+            <div class="benefit-box">
+                <h2>💼 Empregabilidade</h2>
+                <p>Habilidades valorizadas pelo mercado de trabalho em pouco tempo.</p>
+            </div>
+            <div class="benefit-box">
+                <h2>📈 Crescimento Rápido</h2>
+                <p>Aprimore sua carreira e aumente suas oportunidades rapidamente.</p>
+            </div>
+        </div>
+
+        <!-- Lista de Cursos -->
+        <div class="courses">
+            <h2>🎓 Cursos Disponíveis</h2>
+            <ul>
+                <li>📊 Marketing Digital</li>
+                <li>💻 Informática</li>
+                <li>🚜 AgroNegócios</li>
+                <li>📈 Gestão Empresarial</li>
+                <li>🧵 Corte e Costura</li>
+            </ul>
+        </div>
+
+        <!-- Depoimentos -->
+        <div class="testimonials">
+            <h2>💬 O que dizem nossos alunos?</h2>
+            <p class="testimonial">"Em apenas 3 meses, minha carreira mudou completamente!" - João M.</p>
+            <p class="testimonial">"Cursos práticos e dinâmicos, aprendi muito!" - Ana C.</p>
+        </div>
+
+        <!-- Galeria de Imagens -->
+        <div class="gallery">
+            <img src="./assets/aprendizado.webp" width="300x200" alt="Aprendizado">
+            <img src="./assets/negocio.jpg" width="300x200" alt="Negócios e Ensino">
+        </div>
+
+        <!-- Botão de Ação -->
+        <a href="index.html" class="btn">Saiba Mais</a>
+
+        <footer>&copy; 2025 - Todos os direitos reservados</footer>
+    </div>
+</body>
+</html>

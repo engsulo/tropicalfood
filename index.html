@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <section>
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">Tropical Food</a>
+                </div>
+                <div class="menu-icon" div="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#contact">Contactos</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <section id="home">
+        <div class="hero">
+            <h1>BEM VINDO A TROPICAL FOOD</h1>
+            <p>Empresa privada de produção, intermediação, marketing e revendedores na cadeia de valor do
+                Agronegócio & Multi Serviços</p>
+            <a href="#services" class="btn">Conheça nossos Serviços</a>
+        </div>
+
+    </section>
+
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma ampla gama de soluções tecnológicas para diversas indústrias. Confira abaixo:</p>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <i class="icon-dev"></i>
+                <h3>PRODUÇÃO E REVENDA</h3>
+                <p>
+                    Produzimos Produtos alimentares para processamento (Tuberculo, fruta e Cereais)
+                    e revendemos todo tipo de produtos agricola.
+                </p>
+                <button class="btn"><a href="producao.html">Saiba mais</a></button>
+            </div>
+
+            <div class="service-card">
+                <i class="icon-dev"></i>
+                <h3>INTERMEDIAÇÃO E CORRETAGEM AGRÁRIA</h3>
+                <p>
+                    Intermediamos entre produtores e compradores, ajudando a negociar preços e
+                    condições, promovendo vendas e criando lobs.
+                </p>
+                <button class="btn"><a href="intermediacao.html">Saiba mais</a></button>
+            </div>
+
+            <div class="service-card">
+                <i class="icon-dev"></i>
+                <h3>MARKETING E MARKETING DIGITAL</h3>
+                <p>
+                    Análisamos as tendências e demandas do consumidor para identificar
+                    oportunidades de vendas atraves de pesquisas do mercado, realizamos campanhas
+                    publicitárias e eventos.
+                </p>
+                <button class="btn"><a href="marketing.html">Saiba mais</a></button>
+            </div>
+
+            <div class="service-card">
+                <i class="icon-dev"></i>
+                <h3>FORMAÇÃO PROFISSIONAL DE CURTA DURAÇÃO</h3>
+                <p>
+                    Apoiamos os jovens e agricultores na formação profissional em agronegócio,
+                    buscando soluções para empoderamento das comunidades para o melhoramento
+                    da empregabilidade.
+                </p>
+                <button class="btn"><a href="formacao.html">Saiba mais</a></button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>Sobre Nós</h2>
+                <p><strong>Nossa Visão:</strong><br>
+                    Ser reconhecida como a principal plataforma de intermediação de negócios no agronegócios,
+                    impulsionando a sustentabilidade, a inovação, ao mesmo tempo em promover o desenvolvimento
+                    económico das comunidades.
+                </p><br>
+                <p><strong>Nossa Missão:</strong><br>
+                    A nossa missão é de conectar produtores e consumidores, promovendo um ambiente de negócios
+                    sustentavel por meio da intermedição e da valorização das cadeias produtivas.
+                </p><br><br>
+
+                <a href="#contact" class="btn">Entre em contacto</a>
+            </div>
+            <div class="about-image">
+                <img src="./assets/mercado.webp" alt="imagem Agro Incubadora">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Entre em Contacto</h2>
+        <p>
+            Tem alguma dúvida ou precisa de mais informações? Preencha o formulário abaixo ou entre em contato
+            diretamente conosco.
+        </p>
+
+        <div class="contact-container">
+            <div class="contact-form">
+                <form action="my-backend.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="botao">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Informações de Contacto</h3>
+                <p><strong>Endereço:</strong>Bairro da Soalpo - Chimoio</p>
+                <p><strong>Telefone:</strong>+258 86 966 6461</p>
+                <p><strong>E-mail:</strong>tropicalfood13@gmail.com</p>
+
+                <div class="social-media">
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com" target="_blank" class="social-icon"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>''
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
